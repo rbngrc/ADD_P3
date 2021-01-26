@@ -1,18 +1,11 @@
 package dam2.add.p3;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-		menuPrincipal();
-
-	}
-
-	public static void menuPrincipal() {
 		Scanner sc = new Scanner(System.in);
 		Operaciones operacion = new Operaciones();
 
@@ -35,14 +28,19 @@ public class Main {
 
 				switch (opcion) {
 				case 1:
+					operacion.jugar();
 					break;
 				case 2:
+					operacion.anadirPreguntas();
 					break;
 				case 3:
+					operacion.importarPreguntas();
 					break;
 				case 4:
+					operacion.verRecords();
 					break;
 				case 5:
+					operacion.instrucciones();
 					break;
 				case 6:
 					salir = true;
